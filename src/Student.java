@@ -4,12 +4,12 @@ public class Student {
 	private String studentId;
 	private String firstName;
 	private String lastName;
-	private Date dob;
+	private String dob;
 	private String indexNumber;
 	
 	public Student() {}
 	
-	public Student(String studentId, String firstName, String lastName, Date dob, String indexNumber) {
+	public Student(String studentId, String firstName, String lastName, String dob, String indexNumber) {
 		this.studentId = studentId;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -41,11 +41,11 @@ public class Student {
 		this.lastName = lastName;
 	}
 
-	public Date getDob() {
+	public String getDob() {
 		return dob;
 	}
 
-	public void setDob(Date dob) {
+	public void setDob(String dob) {
 		this.dob = dob;
 	}
 
