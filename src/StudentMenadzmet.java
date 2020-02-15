@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Date;
 
 // Imaju unique polja kod studenta ali ta polja ja generisem pa nece doc do ponavljanja
 // Ima li smisla koristit set?
@@ -21,6 +20,8 @@ public class StudentMenadzmet {
 	// ------------------------ADD---------------------
 	public void addStudent(String firstName, String lastName, String dob) {
 		studenti.add(new Student("" + generateId, firstName, lastName, dob, "" + generateIndex));
+		generateId++;
+		generateIndex++;
 	}
 		
 	// --------------GET-----------------

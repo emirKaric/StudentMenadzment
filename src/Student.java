@@ -1,5 +1,3 @@
-import java.util.Date;
-
 public class Student {
 	private String studentId;
 	private String firstName;
@@ -91,7 +89,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [studentId=" + studentId + ", firstName=" + firstName + ", lastName=" + lastName + ", dob="
-				+ dob + ", indexNumber=" + indexNumber + "]";
+		return "\n======Student ID " + studentId + "=========\n Ime: " + firstName + "\n Prezime: " +
+				lastName + "\n Godina rodjenja: "+ dob + "\n Broj indexa: " + indexNumber;
 	}
 }
